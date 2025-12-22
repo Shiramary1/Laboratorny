@@ -2,56 +2,106 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная страница</title>
+    <title>Thousand</title>
 
     <link rel="stylesheet" href="assets/style/fonts.css">
     <link rel="stylesheet" href="assets/style/style.css">
 </head>
 <body>
-    <header>
-        <div class="header-container"></div>
-        <img src="assets/images/logo.png" alt="Логотип" width="100">
-        <nav class="breadcrumbs">
-                <a href="index.html">Главная</a> /
-                <a href="contacts.html">Контакты</a>
-            </nav>
 
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
-                </ul>
-            </nav>
+
+<header class="header">
+    <div class="header__inner">
+        <div class="logo">THOUSAND</div>
+
+        <nav class="nav">
+            <a href="#">Services</a>
+            <a href="#">Media</a>
+            <a href="#">Cases</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contacts</a>
+        </nav>
+
+        <div class="header__contacts">
+            <a href="tel:+77072548147">+7 (707) 254 81 47</a>
+            <a href="tel:+77783969026">+7 (778) 396 90 26</a>
         </div>
-    </header>
-    <main>
-        <h1>Всем привет!</h1>
-        <p>Я создал этот сайт для выполнения практической работы</p>
-        
-        
-        <h3>Сайт сделан мною</h3>
-        
-        <h4>надеюсь он понравится преподавателю</h4>
-        <p> Я правда старался и делал его сам</p>
-        <h3>Я ученик 3 курса</h3>
-        <p> Направление ПИ</p>
-        <hr>
+    </div>
+</header>
 
-    </main>
-    <footer>
-        <h3>Студент ТЮМГУ</h3>
-        <p>Подскажу советом про наш вуз</p>
-        <hr>
-        
-        <h4>Контакты:</h4>
-        <ul>
-            <li>Телеграмм</li>
-            <li>Телефон: +7 (123) 456-78-90</li>
-            <li>Email: tum@yandex.ru/li>
-        </ul>
-        
-        <p>Все права защищены</p>
-    </footer>
+
+<main class="hero">
+    <div class="container hero__inner">
+
+        <div class="hero__content">
+            <h1>
+                Development of <span>mobile applications</span><br>
+                and <span>web services</span> of<br>
+                any complexity
+            </h1>
+
+            <p>
+                We create mobile applications for iOS and Android
+                that move your business to your clients' devices.
+            </p>
+
+            <div class="hero__form">
+                <p class="hero__form-title">
+                    Leave your contacts and we will call you back
+                </p>
+
+                <form>
+                    <input type="text" placeholder="Phone number">
+                    <input type="text" placeholder="Full name">
+                    <button type="submit">Get consultation</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="hero__images">
+            <img src="assets/images/фотка1.jpg" class="img img--first">
+            <img src="assets/images/фотка2.jpg" class="img img--second">
+            <img src="assets/images/фотка3.jpg" class="img img--third">
+            <img src="assets/images/фотка4.jpg" class="img img--fourth">
+        </div>
+
+    </div>
+</main>
+<footer class="footer">
+    <div class="container footer__inner">
+
+        <!-- ЛОГО -->
+        <div class="footer__col">
+            <div class="footer__logo">THOUSAND</div>
+            <p class="footer__desc">
+                Development of mobile applications and web services of any complexity
+            </p>
+        </div>
+
+        <!-- МЕНЮ -->
+        <div class="footer__col">
+            <h4>Company</h4>
+            <a href="#">Services</a>
+            <a href="#">Media</a>
+            <a href="#">Cases</a>
+            <a href="#">FAQ</a>
+        </div>
+
+        <!-- КОНТАКТЫ -->
+        <div class="footer__col">
+            <h4>Contacts</h4>
+            <a href="tel:+77072548147">+7 (707) 254 81 47</a>
+            <a href="tel:+77783969026">+7 (778) 396 90 26</a>
+            <a href="mailto:thousandcompany@gmail.com">
+                thousandcompany@gmail.com
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer__bottom">
+        © 2024 THOUSAND. All rights reserved.
+    </div>
+</footer>
 </body>
 </html>
