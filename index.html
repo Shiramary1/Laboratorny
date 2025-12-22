@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
+
+    <link rel="stylesheet" href="assets/style/fonts.css">
+    <link rel="stylesheet" href="assets/style/style.css">
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Логотип" width="100">
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-        </nav>
+        <div class="header-container"></div>
+        <img src="assets/images/logo.png" alt="Логотип" width="100">
+        <nav class="breadcrumbs">
+                <a href="index.html">Главная</a> /
+                <a href="contacts.html">Контакты</a>
+            </nav>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <h1>Всем привет!</h1>

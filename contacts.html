@@ -4,70 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
+
+    
+    <link rel="stylesheet" href="assets/style/fonts.css">
+    <link rel="stylesheet" href="assets/style/style.css">
 </head>
-<body>
+<body class="contact-page">
 
     <header>
-        <img src="logo.png" alt="Логотип" width="100">
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-        </nav>
+        <img src="assets/images/logo.png" alt="Логотип" width="100">
+        <nav class="breadcrumbs">
+                <a href="index.html">Главная</a> /
+                <a href="contacts.html">Контакты</a>
+            </nav>
+
+        <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
 
     <main>
-        <h2>Contact Us</h2>
-        <p>Пишите мне!</p>
+        <h2 class="title-contact">Contact Us</h2>
+        <p class="text">Пишите мне!</p>
         
-        <img src="XXXL.webp" alt="Контакты" width="350">
+        <img src="src/XXXL.webp" alt="Контакты" width="350">
+        <selection class ="contact-info"></selection>
+
+        <h4 class="title-small">Address</h4>
+        <p class="text">Тюмень</p>
         
-        <h4>Address</h4>
-        <p>Тюмень</p>
-        
-        <h4>Phone</h4>
+        <h4 class="title-small">Phone</h4>
         <ul>
             <li>+7 (123) 456-78-90</li>
             <li>+7 (987) 654-32-10</li>
         </ul>
         
-        <h4>Online service</h4>
+        <h4 class="title-small">Online service</h4>
         <ul>
-            <li><a href="https://www.example.com">www.example.com</a></li>
-            <li><a href="mailto:support@example.com">support@example.com</a></li>
+            <li class ="text"><a href="https://www.example.com">www.example.com</a></li>
+            <li class="text"><a href="mailto:support@example.com">support@example.com</a></li>
         </ul>
-        
-        <h4>Send us message</h4>
-        <form action="#">
-            <label>Full Name:</label><br>
-            <input type="text" placeholder="Ваше имя"><br><br>
-            
-            <label>Email:</label><br>
-            <input type="email" placeholder="your@email.com"><br><br>
-            
-            <label>Message:</label><br>
-            <textarea rows="4" placeholder="Ваше сообщение"></textarea><br><br>
-            
-            <button type="submit">Submit</button>
-        </form>
+    </selection>
+    <section class="contact-form">
+        <h4 class="title-small">Send us message</h4>
+          <form>
+                <label class="text" for="fullname">Full Name:</label><br>
+                <input id="fullname" type="text" name="fullname" class="input-field"><br><br>
+
+                <label class="text" for="email">Email:</label><br>
+                <input id="email" type="email" name="email" class="input-field"><br><br>
+
+                <label class="text" for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="30" class="input-field"></textarea><br><br>
+
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+    </section>
     </main>
 
 
     <footer>
-        <h3>Студент ТЮМГУ</h3>
-        <p>Подскажу советом про наш вуз</p>
+        <h3 class="title-section">Студент ТЮМГУ</h3>
+        <p class="text">Подскажу советом про наш вуз</p>
         <hr>
         
         <h4>Контакты:</h4>
-        <ul>
-            <li>Телеграмм</li>
-            <li>Телефон: +7 (123) 456-78-90</li>
-            <li>Email: tum@yandex.ru/li>
+        <ul class="footer-list">
+            <li class="text">Телеграмм</li>
+            <li class="text">Телефон: +7 (123) 456-78-90</li>
+            <li class="text">Email: tum@yandex.ru/li>
         </ul>
         
-        <p>Все права защищены</p>
+        <p class="text">Все права защищены</p>
     </footer>
 </body>
 </html>
