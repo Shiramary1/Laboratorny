@@ -51,7 +51,7 @@ body {
 }
 
 .toggle::after {
-    content: '▶';
+    content:"📁";
     font-size: 10px;
     color: #666;
 }
