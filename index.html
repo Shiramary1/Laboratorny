@@ -2,261 +2,108 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная страница</title>
-
-    <link rel="stylesheet" href="assets/style/fonts.css">
-    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Разработка приложений</title>
+    <link rel="stylesheet" href="src/assets/styles/style.css">
 </head>
+<body>
 
-<body class="main-page">
-    <header class="modern-header">
-        <div class="header-inner">
 
-            <div class="header-left">
-                <div class="burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    
-                </div>
-                <span class="logo-text">IT WEBSITE</span>
-
-                <nav class="main-menu">
-                    <a href="index.html">Services</a>
-                    <a href="#">Media</a>
-                    <a href="#">Cases</a>
-                    <a href="#">FAQ</a>
-                    <a href="contacts.html">Contacts</a>
-                </nav>
-            </div>
-
-            <div class="header-right">
-                <a href="#" class="phone">+7 (922) 0943934</a>
-                <a href="#" class="email">tgu@mail.com</a>
-            </div>
+<header class="header">
+    <div class="container">
+        <div class="logo">
+       
+            <img src="src/assets/img/logo.png" alt="Логотип сайта">
         </div>
-    </header>
-    <div class="mobile-menu" id="mobileMenu">
-        <button class="close-btn" id="closeBtn">&times;</button>
-        <div class="mobile-logo">TGU</div>
-        
 
-        <a href="index.html">Services</a>
-        <a href="#">Media</a>
-        <a href="#">Cases</a>
-        <a href="#">FAQ</a>
-        <a href="contacts.html">Contacts</a>
-
-        <div class="mobile-bottom">
-            <div class="mobile-phone">+7 (922) 0943934</div>
-            <div class="mobile-email">tgu@mail.com</div>
-        </div>
-        
+        <nav class="navigation">
+            <a href="#">Главная</a>
+            <a href="#">Услуги</a>
+            <a href="#">Контакты</a>
+        </nav>
     </div>
-    <main class="hero">
-        <div class="hero-inner">
+</header>
 
-            <div class="hero-left">
-                <h1 class="hero-title">
-                    Development of <span>mobile applications</span> and 
-                    <span>web services</span> of any complexity
-                </h1>
 
-                <p class="hero-subtitle">
-                    We create mobile applications for iOS, Android that transfer your business
-                    to mobile applications of your customers' devices
+<main>
+
+
+    <section class="hero">
+        <div class="container hero-content">
+
+            <article class="hero-text">
+                <h1>Разработка мобильных приложений и веб-сервисов</h1>
+                <p>
+                    Мы создаём мобильные приложения для iOS и Android,
+                    которые помогают вашему бизнесу расти.
                 </p>
 
-                <div class="hero-form">
-                    <h3>Leave your contacts and we will call you back within 30 minutes</h3>
+                <form class="hero-form">
+                    <input type="tel" placeholder="+7 (___) ___-__-__">
+                    <input type="text" placeholder="Ваше имя">
+                    <button type="submit">Получить консультацию</button>
+                </form>
+            </article>
 
-                    <form>
-                        <div class="form-row">
-                            <input type="text" placeholder="Phone number">
-                            <input type="text" placeholder="Full name">
-                            <button class="btn-blue">Get consultation</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <div class="hero-right">
+            <aside class="hero-image">
                 
-                    <div class="img-wrapper img-1">
-    
-                        <img src="assets/images/column-left (1).webp" class="phone-img">
-                    </div>
-                    <div class="img-wrapper img-2" > 
-                        <img src="assets/images/column-right.webp" class="phone-img ">
-                    </div>
-            
-            </div>
+                <img src="src/assets/img/hero.webp" alt="Hero изображение">
+            </aside>
 
         </div>
-    </main>
-    <section class="dev-cycle">
-        <div class="dev-inner">
-
-            <div class="dev-left">
-                <h2 class="dev-title">Full development cycle</h2>
-                <p class="dev-subtext">We use proven technologies</p>
-
-                <div class="dev-block">
-                    <h3>Web</h3>
-                    <p>PHP / Javascript / Node.JS / Web Socket / Socket.io / Vue.js / Nuxt / MySQL / Laravel / GO lang / Django / Python</p>
-                </div>
-
-                <div class="dev-block">
-                    <h3>Mobile</h3>
-                    <p>Swift / Kotlin / Alamofire / Firebase / CoreData / Room / Realm / Coroutine / RxJava / RxSwift / Unit Test / Navigation</p>
-                </div>
-            </div>
+    </section>
 
 
-            <div class="dev-right">
-                <a href="#">iOS development →</a>
-                <a href="#">Android development →</a>
-                <a href="#">Web development →</a>
-                <a href="#">UI/UX design →</a>
-                <a href="#">Testing →</a>
-                <a href="#">Launch →</a>
-                <a href="#">IT consulting →</a>
+    <section class="technologies">
+        <div class="container">
+
+            <header>
+                <h2>Полный цикл разработки</h2>
+                <p>Используем проверенные технологии для веб и мобильных проектов</p>
+            </header>
+
+            <div class="tech-columns">
+
+                <article class="tech-block">
+                    <h3>Веб</h3>
+                    <p>PHP, JavaScript, Node.js</p>
+                    <p>React, Vue</p>
+                    <p>Laravel, Express</p>
+                </article>
+
+                <article class="tech-block">
+                    <h3>Мобильные</h3>
+                    <p>Swift, Kotlin</p>
+                    <p>React Native, Flutter</p>
+                    <p>Тестирование и CI</p>
+                </article>
+
             </div>
 
         </div>
     </section>
 
-    <section class="industries">
-        <div class="industries-inner">
-
-            <h2 class="industries-title">
-                Developed more than <span>100</span><br> projects in <span>15</span> industries
-            </h2>
-
-            <div class="industries-grid">
-                <div class="ind-item">
-                    <img src="assets/images/social-media.png" alt="">
-                    Social media
-                </div>
-
-                <div class="ind-item">
-                    <img src="assets/images/football.png" alt="">
-                    Fitness and sport
-                </div>
-
-                <div class="ind-item">
-                    <img src="assets/images/bank.png" alt="">
-                    Bank
-                </div>
-
-                <div class="ind-item">
-                    <img src="assets/images/builder.png" alt="">
-                    Construction
-                </div>
-
-                <div class="ind-item">
-                    <img src="assets/images/console.png" alt="">
-                    Game projects
-                </div>
-
-                <div class="ind-item">
-                    <img src="assets/images/graduation-cap.png" alt="">
-                    Education
-                </div>
-
-                <div class="ind-item">
-                    <img src="assets/images/car.png" alt="">
-                    Auto, transport
-                </div>
-
-                <div class="ind-item">
-                    <img src="assets/images/healthy.png" alt="">
-                    Medicine, health
-                </div>
-
-                <div class="ind-item">
-                    <img src="assets/images/food.png" alt="">
-                    Restaurants, food delivery
-                </div>
-
-                <div class="ind-item">
-                    <img src="assets/images/marketplace.png" alt="">
-                    Marketplaces
-                </div>
-
-                <div class="ind-item">
-                    <img src="assets/images/vr-goggles.png" alt="">
-                    AR technology
-                </div>
-
-                <div class="ind-item">
-                    <img src="assets/images/tv.png" alt="">
-                    TV series
-                </div>
-
-                <div class="ind-item">
-                    <img src="assets/images/travel.png" alt="">
-                    Startups
-                </div>
-
-                <div class="ind-item">
-                    <img src="assets/images/meditation.png" alt="">
-                    Religion
-                </div>
-
-                <div class="ind-item">
-                    <img src="assets/images/online-learning.png" alt="">
-                    Online courses
-                </div>
-            </div>
+</main>
 
 
-        </div>
-    </section>
-    <footer class="modern-footer">
-        <div class="footer-title">IT WEBSITE</div>
+<footer class="footer">
+    <div class="container footer-content">
 
-        <div class="footer-grid">
-            <div class="footer-item">
-                <div class="footer-label">Contact nums</div>
-                <div class="footer-value">+7 (922) 300 20 26</div>
-            </div>
+        <section class="footer-info">
+            <h4>О компании</h4>
+            <p>Разработка современных веб- и мобильных решений.</p>
+        </section>
 
-            <div class="footer-item">
-                <div class="footer-label">Post</div>
-                <div class="footer-value">tgu@mail.com</div>
-            </div>
+        <nav class="footer-nav">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Контакты</a>
+        </nav>
 
-            <div class="footer-item">
-                <div class="footer-label">Adress</div>
-                <div class="footer-value">Tumen city, respublic st. 9</div>
-            </div>
+        <section class="footer-copy">
+            <p>© 2025 Все права защищены</p>
+        </section>
 
-            <div class="footer-item">
-                <div class="footer-label">Leave a request</div>
-                <div class="footer-value">Leave a request</div>
-            </div>
-        </div>
+    </div>
+</footer>
 
-        <p class="footer-bottom">We work throughout world</p>
-    </footer>
-    <script>
-        const burger = document.querySelector('.burger');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const closeBtn = document.getElementById('closeBtn'); // новая кнопка
-
-    // Открытие/закрытие меню при клике на бургер
-        burger.addEventListener('click', () => {
-            mobileMenu.classList.toggle('show');
-            burger.classList.toggle('active');
-        });
-
-    // Закрытие меню при клике на крестик
-        closeBtn.addEventListener('click', () => {
-            mobileMenu.classList.remove('show');
-            burger.classList.remove('active');
-        });
-    </script>
 </body>
 </html>
