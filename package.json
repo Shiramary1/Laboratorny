@@ -1,0 +1,17 @@
+{
+  "name": "tic-tac-toe-game",
+  "version": "1.0.0",
+  "description": "Игра Крестики-Нолики на JavaScript",
+  "main": "tic-tac-toe.html",
+  "scripts": {
+    "start": "http-server -p 3000 -c-1",
+    "dev": "http-server -p 3000 -o",
+    "server": "http-server -a 127.0.0.1 -p 8080"
+  },
+  "keywords": ["game", "tic-tac-toe", "javascript"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
