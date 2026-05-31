@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 14</title>
+    <link rel="stylesheet" href="./src/assets/styles/style.css">
+</head>
+<body>
+    <main class="page-shell">
+        <section class="hero">
+            <p class="hero__eyebrow">Lesson 14</p>
+            <h1>Листинг постов</h1>
+            <p class="hero__text">
+                Данные загружаются с JSONPlaceholder.
+                У каждого поста есть собственная страница и блок комментариев.
+            </p>
+        </section>
+
+        <section id="catalog" class="catalog card">
+            <div class="catalog__top">
+                <div>
+                    <h2>Публикации</h2>
+                    <p class="catalog__caption">Страница <span data-catalog-page-label>1</span></p>
+                </div>
+
+                <button class="catalog__reload" type="button" data-catalog-reload>
+                    Обновить
+                </button>
+            </div>
+
+            <div class="catalog__state" data-catalog-state>Загружаем посты...</div>
+
+            <div class="catalog__items" data-catalog-items></div>
+
+            <div class="catalog__pagination" data-catalog-pagination></div>
+        </section>
+    </main>
+
+    <script type="module" src="./catalog.js"></script>
+</body>
+</html>
