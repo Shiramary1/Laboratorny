@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post details</title>
+    <link rel="stylesheet" href="../src/assets/styles/style.css">
+</head>
+<body>
+    <main class="page-shell page-shell_detail">
+        <a class="back-link" href="../catalog.html">Назад к списку</a>
+
+        <section class="detail card">
+            <div class="detail__state" data-post-state>Загружаем пост...</div>
+
+            <article class="detail__content" data-post-content hidden>
+                <p class="detail__eyebrow" data-post-id>Пост</p>
+                <h1 data-post-title></h1>
+                <p class="detail__body" data-post-body></p>
+            </article>
+        </section>
+
+        <section class="detail card">
+            <div class="detail__head">
+                <h2>Комментарии</h2>
+                <button class="catalog__reload" type="button" data-comments-reload>
+                    Обновить
+                </button>
+            </div>
+
+            <div class="detail__state" data-comments-state>Загружаем комментарии...</div>
+            <div class="comments" data-comments-list></div>
+        </section>
+    </main>
+
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
