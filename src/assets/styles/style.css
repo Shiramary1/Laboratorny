@@ -1,0 +1,123 @@
+:root {
+    color-scheme: light;
+    --bg: #f6f7fb;
+    --surface: #ffffff;
+    --ink: #16202a;
+    --muted: #5f6b7a;
+    --line: #dce2ea;
+    --accent: #0f766e;
+    --accent-strong: #0b5f59;
+    --soft: #e8f5f3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+}
+
+.layout {
+    width: min(940px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.panel {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 16px 40px rgba(22, 32, 42, 0.08);
+}
+
+.intro-panel {
+    margin-bottom: 20px;
+}
+
+.label {
+    margin: 0 0 8px;
+    color: var(--accent);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+h1,
+h2 {
+    margin: 0 0 14px;
+    line-height: 1.2;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.muted {
+    color: var(--muted);
+    margin: 0;
+}
+
+.task-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+}
+
+.task-link {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-height: 112px;
+    padding: 18px;
+    color: var(--ink);
+    text-decoration: none;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+}
+
+.task-link:hover,
+.back-link:hover {
+    border-color: var(--accent);
+    color: var(--accent-strong);
+}
+
+.task-link span {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.back-link {
+    display: inline-flex;
+    margin-bottom: 16px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.result-list {
+    display: grid;
+    gap: 10px;
+    margin: 18px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.result-list li,
+.output {
+    padding: 12px 14px;
+    background: var(--soft);
+    border-radius: 6px;
+}
+
+code {
+    font-family: Consolas, monospace;
+    font-size: 0.95em;
+}
+
