@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Апельсин">
+  <rect width="160" height="160" rx="28" fill="#fff8ef"/>
+  <circle cx="80" cy="86" r="52" fill="#f97316"/>
+  <circle cx="61" cy="68" r="12" fill="#ffa54d" opacity=".75"/>
+  <path d="M82 42c4-15 15-24 30-27" fill="none" stroke="#6b4b28" stroke-width="7" stroke-linecap="round"/>
+  <path d="M99 31c15-8 27-5 35 6-15 6-26 4-35-6z" fill="#2f9e44"/>
+  <g fill="#e45f0c" opacity=".45">
+    <circle cx="94" cy="80" r="3"/>
+    <circle cx="61" cy="101" r="3"/>
+    <circle cx="101" cy="108" r="3"/>
+    <circle cx="75" cy="119" r="2.5"/>
+  </g>
+</svg>
