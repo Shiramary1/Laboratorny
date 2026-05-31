@@ -1,0 +1,90 @@
+:root {
+    --bg: #f6f7fb;
+    --panel-soft: #f9fbff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --line: #e5e7eb;
+    --accent: #2563eb;
+    --accent-soft: #eaf2ff;
+    --danger: #b91c1c;
+    --danger-soft: #fef2f2;
+    --warning: #92400e;
+    --warning-soft: #fff7ed;
+    --shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+html {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    color: var(--text);
+    background:
+        radial-gradient(circle at top right, rgba(37, 99, 235, 0.12), transparent 24%),
+        linear-gradient(180deg, #fcfdff 0%, var(--bg) 100%);
+}
+
+.page-shell {
+    width: min(1120px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 32px 0 48px;
+}
+
+.page-shell_detail {
+    width: min(900px, calc(100% - 40px));
+}
+
+.card {
+    border: 1px solid var(--line);
+    border-radius: 26px;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: var(--shadow);
+}
+
+.hero {
+    margin-bottom: 24px;
+}
+
+.hero__eyebrow,
+.detail__eyebrow {
+    margin: 0 0 10px;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.hero h1,
+.detail h1,
+.catalog h2,
+.detail h2 {
+    margin: 0;
+}
+
+.hero h1 {
+    font-size: clamp(34px, 5vw, 52px);
+}
+
+.hero__text {
+    max-width: 760px;
+    margin: 12px 0 0;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 700;
+}
