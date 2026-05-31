@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 15 | Todos</title>
+    <link rel="stylesheet" href="./src/assets/styles/style.css">
+</head>
+<body>
+<header class="header">
+    <nav class="nav">
+        <a href="./index.html">Главная</a>
+        <a href="./user.html">Профиль</a>
+        <a href="./logout.html">Выйти</a>
+    </nav>
+</header>
+
+<main class="main">
+    <section class="todo-layout">
+        <article class="todo-card">
+            <h1>Список задач</h1>
+            <p class="todo-subtitle">Добавляйте задачи, отмечайте выполненные и удаляйте ненужные.</p>
+        </article>
+
+        <article class="todo-card">
+            <div class="todo-form">
+                <input type="text" id="todo-input" class="todo-input" placeholder="Введите описание задачи">
+                <button id="todo-submit" class="todo-submit-btn" type="button">Добавить задачу</button>
+            </div>
+        </article>
+
+        <article class="todo-card">
+            <div id="todo-state" class="todo-state" hidden></div>
+            <ul id="todo-list" class="todo-list"></ul>
+        </article>
+    </section>
+</main>
+
+<div class="loader-wrapper" data-loading>
+    <img
+            src="./src/assets/icons/loader.svg"
+            alt=""
+            class="loader"
+    >
+</div>
+
+<script src="src/pages/todos.js" type="module"></script>
+</body>
+</html>
