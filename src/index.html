@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 13</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main class="page">
+        <section class="app">
+            <div class="panel panel--main">
+                <p class="eyebrow">Lesson 13</p>
+                <h1>Калькулятор пиццы</h1>
+                <p class="lead">
+                    Выберите основу, размер и дополнительные ингредиенты.
+                    Кнопка корзины обновляется автоматически.
+                </p>
+
+                <div class="pizza-grid" id="pizzaGrid">
+                    <button class="pizza-card is-active" type="button" data-type="margarita">
+                        <span class="pizza-card__art pizza-card__art--margarita"></span>
+                        <span class="pizza-card__name">Маргарита</span>
+                        <span class="pizza-card__meta">500 ₽ · 300 ккал</span>
+                    </button>
+
+                    <button class="pizza-card" type="button" data-type="pepperoni">
+                        <span class="pizza-card__art pizza-card__art--pepperoni"></span>
+                        <span class="pizza-card__name">Пепперони</span>
+                        <span class="pizza-card__meta">800 ₽ · 400 ккал</span>
+                    </button>
+
+                    <button class="pizza-card" type="button" data-type="bavarian">
+                        <span class="pizza-card__art pizza-card__art--bavarian"></span>
+                        <span class="pizza-card__name">Баварская</span>
+                        <span class="pizza-card__meta">700 ₽ · 450 ккал</span>
+                    </button>
+                </div>
+            </div>
+
+            <aside class="panel panel--side">
+                <section class="section">
+                    <div class="section__head">
+                        <h2>Выберите размер</h2>
+                        <span class="hint">Обязательный параметр</span>
+                    </div>
+
+                    <div class="size-switch" id="sizeSwitch">
+                        <button class="size-switch__item is-active" type="button" data-size="small">
+                            Маленькая
+                        </button>
+                        <button class="size-switch__item" type="button" data-size="large">
+                            Большая
+                        </button>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div class="section__head">
+                        <h2>Добавить по вкусу</h2>
+                        <span class="hint">Можно выбрать несколько</span>
+                    </div>
+
+                    <div class="topping-grid" id="toppingGrid">
+                        <button class="topping-card" type="button" data-topping="mozzarella">
+                            <span class="topping-card__icon">🧀</span>
+                            <span class="topping-card__name">Сливочная моцарелла</span>
+                            <span class="topping-card__meta">от 50 ₽ · 20 ккал</span>
+                        </button>
+
+                        <button class="topping-card" type="button" data-topping="cheeseBorder">
+                            <span class="topping-card__icon">🍕</span>
+                            <span class="topping-card__name">Сырный бортик</span>
+                            <span class="topping-card__meta">150 / 300 ₽ · 50 ккал</span>
+                        </button>
+
+                        <button class="topping-card" type="button" data-topping="cheddarParmesan">
+                            <span class="topping-card__icon">🧈</span>
+                            <span class="topping-card__name">Чеддер и пармезан</span>
+                            <span class="topping-card__meta">150 / 300 ₽ · 50 ккал</span>
+                        </button>
+                    </div>
+                </section>
+
+                <section class="summary">
+                    <div class="summary__row">
+                        <span>Пицца</span>
+                        <strong id="summaryType">Маргарита</strong>
+                    </div>
+                    <div class="summary__row">
+                        <span>Размер</span>
+                        <strong id="summarySize">Маленькая</strong>
+                    </div>
+                    <div class="summary__row">
+                        <span>Добавки</span>
+                        <strong id="summaryToppings">Без добавок</strong>
+                    </div>
+                </section>
+
+                <button class="cart-button" id="cartButton" type="button">
+                    Добавить в корзину за <span id="totalPrice">600 ₽</span>
+                    <small id="totalCalories">400 ккал</small>
+                </button>
+            </aside>
+        </section>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>
